@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Muestras</title>
+    <style>
+        body
+        {
+            margin: 0;
+            font-family: "Montserrat";
+            overflow-x: hidden;
+        }
+        header{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header img{
+            height: 100%;
+        }
+        .logocontainer{
+            height: 90vh;
+            
+        }
+        .menu
+        {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            width: 100%;
+        }
+        .menu li{
+            width: 90%;
+            border-radius: 5px;
+            text-align: center;
+            margin: 10px 2px;
+            padding: 5px 0;
+            border: 2px solid #37464f;
+        }
+        .menu li a {
+            display: block;
+            font-family: "Montserrat";
+            text-decoration: none;
+            color: #37464f;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+        }
+        h1{
+            text-align: center;
+            color: #37464f;
+        }
+        .frames{
+            display: grid;
+            grid-template:  1fr 1fr 1fr 1fr / 1fr;
+            justify-items: center;
+            grid-gap: 20px;
+        }
+        .frames .framecontent{
+            display: grid;
+            grid-template: 8fr 1fr / 1fr;
+            justify-items: center;
+            grid-gap: 7px;
+            border: 5px solid #37464f;
+            border-radius: 10px;
+        }
+        .frames a{
+            text-decoration: none;
+            background:linear-gradient(to left, #37464f,  #fe1743);
+            padding: 15px;
+            width: 50%;
+            text-align: center;
+            font-family: "Montserrat"
+            padding: 15px;
+            border-radius: 5px;
+            color: white;
+        }
+        .frames iframe{
+            width: 500px;
+            height: 375px;
+        }
+        #face{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        footer{
+            height: 50vh;
+            background: #3fc3fe;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+        footer img{
+            width: 200px;
+            border: 1px solid #37464f; 
+            border-radius: 50%;
+        }
+        footer a{
+            text-decoration: none;
+            color: #37464f;
+        }
+        @media screen and (max-width: 750px){
+           header{
+               display:flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               padding: 20px;
+           }
+           header img{
+               margin-top: 25px;
+               width: 250px;
+               height: 250px;
+           }
+           .framecontent{
+               width: 310px;
+           }
+           .framecontent span{
+               width: 310px;
+               overflow: auto;
+           }
+           .framecontent iframe{
+               width: 450px;
+           }
+           #face iframe{
+               width: 320px;
+           }
+           footer h1{
+               margin: 0;
+               font-size: 15px;
+
+           }
+           footer img{
+               margin: 7px;
+           }
+           footer a{
+               border:  2px solid #37464f;
+               border-radius: 5px;
+               margin: 5px;
+               padding: 5px;
+               text-align: center;
+           }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li> <a href="#web">
+    
+                Muestras Páginas WEB
+            </a>
+            </li>
+            <li> <a href="#face">
+    
+                Muestras Págianas Facebook
+            </a>
+            </li>
+            <li> <a href="#contacto">
+    
+                Contacto
+            </a>
+            </li>
+        </ul>
+        <div class="logocontainer">
+           <img src="2.png" alt="logo">
+        </div>
+    </header>
+    <h1>Páginas Web de muestra</h1>
+    <section class="frames" id="web">
+        <div class="framecontent">
+            <span>
+                <iframe src="https://superkleber.github.io/dentista/" frameborder="0" ></iframe>
+            </span>    
+            <a href="https://superkleber.github.io/dentista/">Ver Página</a>
+        </div>
+        <div class="framecontent">
+            <span>
+                <iframe src="http://starsgenerator.com/" frameborder="0" ></iframe>
+            </span>    
+                <a href="http://starsgenerator.com/">Ver Página</a>
+        </div>
+        <div class="framecontent">
+            <span>
+                <iframe src="https://superkleber.github.io/magamichelle/" frameborder="0" ></iframe>
+            </span>
+            <a href="https://superkleber.github.io/magamichelle/">Ver Página</a>
+        </div>
+        <div class="framecontent">
+            <span>
+                <iframe src="https://superkleber.github.io/Invie/" frameborder="0" ></iframe>
+            </span>
+            <a href="https://superkleber.github.io/Invie/">Ver Página</a>
+        </div>
+    </section>
+    <section id="face">
+            <h1>Ejemplos de Publicidad en Facebook</h1>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FStarsGenerator%2Fposts%2F805887316268589&width=500" width="500" height="560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FStarsGenerator%2Fposts%2F752702574920397&width=500" width="500" height="560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Focefcpn%2Fposts%2F1914667682159826&width=500" width="500" height="434" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Focefcpn%2Fposts%2F1914702045489723&width=500" width="500" height="434" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    </section>
+    <footer class="contacto" id="contacto">
+        <img src="padre.jpg" alt="padre">
+        <h1>Kleber Eldy Rivamontan Aguilar</h1>
+        <a href="tel:+59167142022"> celular: 67142022 (Sólo llamadas)</a>
+    </footer>
+</body>

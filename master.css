@@ -50,18 +50,29 @@
             color: #37464f;
         }
         .frames{
-            display: grid;
+            /* display: grid;
             grid-template:  1fr 1fr 1fr 1fr / 1fr;
             justify-items: center;
-            grid-gap: 20px;
+            grid-gap: 20px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .frames .framecontent{
-            display: grid;
+            /* display: grid;
             grid-template: 8fr 1fr / 1fr;
             justify-items: center;
-            grid-gap: 7px;
+            grid-gap: 7px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             border: 5px solid #37464f;
             border-radius: 10px;
+        }
+        .framecontent .descripcion{
+            display: none;
         }
         .frames a{
             text-decoration: none;
@@ -69,7 +80,7 @@
             padding: 15px;
             width: 50%;
             text-align: center;
-            font-family: "Montserrat"
+            font-family: "Montserrat";
             padding: 15px;
             border-radius: 5px;
             color: white;
@@ -89,18 +100,23 @@
             background: #3fc3fe;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             padding: 25px;
+        }
+        footer h1{
+            margin: 10px 0;
         }
         footer img{
             width: 200px;
             border: 1px solid #37464f; 
             border-radius: 50%;
+            margin: 10px 0;
         }
         footer a{
             text-decoration: none;
             color: #37464f;
+            margin: 10px 0;
         }
         @media screen and (max-width: 750px){
            header{
@@ -117,11 +133,25 @@
            }
            .framecontent{
                width: 310px;
+               padding: 10px;
+               margin: 20px 0;
            }
-           .framecontent span{
-               width: 310px;
-               overflow: auto;
+           
+
+           
+           .framecontent .frame{
+               display: none;
            }
+           .framecontent .descripcion{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+           }
+           .framecontent .descripcion h1, .framecontent .descripcion h3 {
+            font-size: 3.7vw;
+            text-align: center;
+            }
            .framecontent iframe{
                width: 450px;
            }
@@ -129,18 +159,18 @@
                width: 320px;
            }
            footer h1{
-               margin: 0;
                font-size: 15px;
 
            }
            footer img{
-               margin: 7px;
+               width: 150px;
+               margin: 15px;
            }
            footer a{
                border:  2px solid #37464f;
                border-radius: 5px;
-               margin: 5px;
                padding: 5px;
                text-align: center;
            }
         }
+        
